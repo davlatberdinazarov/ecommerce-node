@@ -2,6 +2,8 @@ const express = require("express");
 const ProductController = require("../controllers/productController");
 const authMiddleware = require("../middlewares/authMiddleware");
 const roleCheckMiddleware = require("../middlewares/roleCheckMiddleware");
+const validate = require("../middlewares/validationMiddleware");
+const productValidationSchema = require("../validation/productValidation");
 
 const router = express.Router();
 
@@ -12,6 +14,7 @@ router.get("/:id", ProductController.getProductById);
 // Faqat admin mahsulot qo'sha olishi uchun middleware qo'shildi
 router.post(
   "/",
+  validate(productValidationSchema),
   authMiddleware,
   roleCheckMiddleware("admin"),
   ProductController.createProduct

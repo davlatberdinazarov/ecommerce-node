@@ -1,4 +1,4 @@
-const TokenUtils = require("../utils/tokenUtils");
+const TokenUtils = require("../utils/TokenUtils");
 
 const authMiddleware = (req, res, next) => {
   // Authorization headerni tekshirish

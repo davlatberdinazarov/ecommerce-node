@@ -4,11 +4,11 @@ const roleCheckMiddleware = (requiredRole) => {
         if (!user) {
             return res.status(401).json({ message: "Unauthorized" });
         }
-
-        if (user.role!== requiredRole) {
+        console.log(user)
+        if (user.role !== requiredRole) {
             return res.status(403).json({ message: "Forbidden" });
         }
-
+ 
         next();
     };
 };

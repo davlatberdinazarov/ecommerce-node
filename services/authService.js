@@ -1,7 +1,7 @@
 // AuthService.js
 const bcrypt = require("bcrypt");
-const TokenUtils = require("../utils/tokenUtils");
 const User = require("../models/userModel");
+const TokenUtils = require("../utils/TokenUtils");
 
 class AuthService {
   constructor(userModel) {
@@ -27,8 +27,14 @@ class AuthService {
       throw new Error("Invalid email or password");
     }
 
-    const accessToken = TokenUtils.generateAccessToken({ id: user._id });
-    const refreshToken = TokenUtils.generateRefreshToken({ id: user._id });
+    const payload = {
+      id: user.id,
+      email: user.email,
+      role: user.role, // Role ni qo'shish
+    };
+
+    const accessToken = TokenUtils.generateAccessToken(payload);
+    const refreshToken = TokenUtils.generateRefreshToken(payload);
 
     // Save the refresh token
     user.refreshToken = refreshToken;
