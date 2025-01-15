@@ -1,7 +1,9 @@
 // AuthService.js
 const bcrypt = require("bcrypt");
 const User = require("../models/userModel");
-const TokenUtils = require("../utils/TokenUtils");
+const TokenUtils = require("../utils/tokenUtils");
+
+
 
 class AuthService {
   constructor(userModel) {

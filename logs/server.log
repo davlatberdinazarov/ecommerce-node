@@ -58,3 +58,7 @@
 2025-01-13 13:46:34 [INFO]: ::1 - - [13/Jan/2025:08:46:34 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 2025-01-14 19:04:30 [INFO]: ::1 - - [14/Jan/2025:14:04:30 +0000] "GET /api/products HTTP/1.1" 200 457 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 2025-01-14 19:04:31 [INFO]: ::1 - - [14/Jan/2025:14:04:31 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+2025-01-15 08:56:06 [INFO]: ::1 - - [15/Jan/2025:03:56:06 +0000] "GET /api/products HTTP/1.1" 200 457 "-" "PostmanRuntime/7.43.0"
+2025-01-15 08:56:23 [INFO]: ::1 - - [15/Jan/2025:03:56:23 +0000] "GET /api/users/getAll HTTP/1.1" 200 257 "-" "PostmanRuntime/7.43.0"
+2025-01-15 09:04:56 [INFO]: ::1 - - [15/Jan/2025:04:04:56 +0000] "GET /api/users/getAll HTTP/1.1" 200 257 "-" "PostmanRuntime/7.43.0"
+2025-01-15 09:04:59 [INFO]: ::1 - - [15/Jan/2025:04:04:59 +0000] "GET /api/users/getAll HTTP/1.1" 200 257 "-" "PostmanRuntime/7.43.0"
